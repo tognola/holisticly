@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="./assets/logo.svg" alt="logo" class="logo">
+            <div>
+                <span class="line1">Coping with</span>
+                <span class="line2">Anxiety</span>
+            </div>
+        </div>
+        <img src="./assets/anxiety.svg" alt="anxiety">
+
+
+    </header>
+    <main>
+
+        <p>Did you know an estimated 284 million people experienced an anxiety in 2020? Did you know an estimated 284
+            million people experienced an anxiety in 2020?</p>
+
+        <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+        <div id="myLandbot" style="width: 100%; height: 409px"></div>
+        <script>
+            var myLandbot = new Landbot.Container({
+                container: '#myLandbot',
+                configUrl: 'https://chats.landbot.io/v3/H-882183-M84LZLEJ6HDH9WCM/index.json',
+            });
+        </script>
+    </main>
+
+</body>
+
+</html>
