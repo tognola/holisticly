@@ -26,8 +26,7 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 100%;
-  overflow-x: hidden;
-  height: 140px;
+  height: 125px;
   background: #F9F9FA;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -39,15 +38,16 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 header > div {
-  padding: 2rem;
+  padding: 1rem 0rem 1rem 2rem;
 }
 
 header .info {
@@ -58,30 +58,15 @@ header .info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
-}
-
-header .info > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  max-width: 55%;
 }
 
 header .info .logo {
-  width: 74px;
+  width: 153px;
   margin-bottom: .5em;
 }
 
@@ -90,19 +75,8 @@ header .info span {
   color: #2C3344;
 }
 
-header .info .line1 {
-  font-size: 18px;
-}
-
-header .info .line2 {
-  line-height: 30px;
-  font-size: 36px;
-  position: relative;
-  z-index: 1;
-}
-
-header .info .line3 {
-  font-size: 23px;
+header .info .title {
+  font-size: 17px;
 }
 
 header .info .solavieve {
@@ -118,13 +92,16 @@ header .info .solavieve {
 
 header .featured {
   padding: 0;
+  position: relative;
 }
 
 header .featured img {
   position: absolute;
-  right: 15px;
-  max-width: 180px;
-  height: 140px;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(-5%, -50%);
+          transform: translate(-5%, -50%);
+  max-width: 140px;
 }
 
 main {
@@ -213,4 +190,4 @@ main .badge-list .badge .badge-title {
 .chatbox div {
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_2.css.map */
